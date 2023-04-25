@@ -12,6 +12,7 @@
 <form action="">
     <ul>
         <li>
+            
             <label for="email">Email:</label>
             <input type="email" placeholder="ejemplo@prueba.com" name="email" value="">
         </li>
