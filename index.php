@@ -27,7 +27,7 @@
             <a href="">¿Olvidó su contraseña?</a>
         </li>
         <li>
-            <a href="">Crear una nueva cuenta</a>
+            <a href="http://localhost:3000/creacionCuenta.php">Crear una nueva cuenta</a>
         </li>
     </ul>
 </form>
