@@ -1,6 +1,15 @@
-<?php
 
+<?php
+require ("conexion.php");
+$crear=isset($_POST["create"]);
+
+if($crear){
+
+$conexion=new Conexion;
+$conexion->establecerConexion();
+}
 ?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -10,7 +19,7 @@
     <title>Document</title>
 </head>
 <body>
-    <form action="">
+    <form action="" method="$_POST">
         <ul>
             <li>
                 <label for="userName">User Name:</label>
@@ -41,10 +50,11 @@
                 <input type="text" name="telephoneNumber" id="telephoneNumber">
             </li>
             <li>
-                <button type="submit">Create Count</button>
-                <button type="submit">Return</button>
+                <button type="submit" name="create">Create Account</button>
+                <button type="submit" name="return">Return</button>
             </li>
         </ul>
     </form>
 </body>
 </html>
+
